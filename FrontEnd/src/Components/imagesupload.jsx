@@ -42,7 +42,7 @@ const ImageUpload = () => {
                 console.log('Acc',data.accuracy)
                 //setPrediction(data.prediction.flat());
 
-                // Show a pop-up with the prediction and accuracy
+                // pop-up with the prediction and accuracy
                 window.alert(`Prediction: ${data.prediction}\nAccuracy: ${data.accuracy}`);
             } catch (error) {
                 console.error('Error:', error);

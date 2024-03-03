@@ -11,7 +11,7 @@ const LandingPage = () => {
     const file = event.target.files[0];
     setSelectedFile(file);
 
-    // Preview the selected image
+    
     const reader = new FileReader();
     reader.onloadend = () => {
       setPreviewImage(reader.result);
@@ -20,8 +20,7 @@ const LandingPage = () => {
   };
 
   const handleSubmit = () => {
-    // Handle the submission of the selected file
-    // For example, you can send it to a server or process it in some way
+    
     console.log('Submitted:', selectedFile);
     window.alert('Submitted successfully!');
   };

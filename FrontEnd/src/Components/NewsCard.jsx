@@ -9,12 +9,12 @@ const NewsCard = () => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(
-          'https://newsapi.org/v2/everything?q=Sustainability&from=2024-03-01&sortBy=popularity&apiKey=3af95c35f4fd4062b9a1ca46a1ed6e98'
+          'https://newsapi.org/v2/everything?q=Climate&from=2024-03-01&sortBy=popularity&apiKey=3af95c35f4fd4062b9a1ca46a1ed6e98'
         );
 
         // Check if articles array exists and has at least one item
         if (response.data.articles && response.data.articles.length > 0) {
-          // Limit the news articles to top 6
+          
           setNews(response.data.articles.slice(0, 12));
         }
       } catch (error) {
@@ -32,8 +32,8 @@ const NewsCard = () => {
       backgroundPosition: 'center'
     }}>
       <h1 className="text-3xl font-bold text-center mb-2 pt-2 pb-4 w-full text-white" style={{
-        backgroundColor: 'rgba(0, 0, 0, 0.3)', // Adjust the opacity as needed
-        backdropFilter: 'blur(5px)' // Adjust the blur radius as needed
+        backgroundColor: 'rgba(0, 0, 0, 0.3)', 
+        backdropFilter: 'blur(5px)' 
       }}>Latest Sustainability News</h1>
       <div className="flex justify-center flex-wrap">
         {news.map((article, index) => (
