@@ -1,12 +1,13 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import img1 from '../assets/img1.jpg';
-import LandingPage from './LandingPage'; // Corrected import path
+
 import FeaturesComponent from './FeatureComponent.jsx'
 import OurEcoSortJourney from './Intro.jsx'
 import ImageUpload from './imagesupload.jsx'
 import Navbar from './Navbar.jsx'
 import Footer from './Footer.jsx'
+import RecyclingTips from './Recycling.jsx';
 
 const LoginPage = () => {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
@@ -15,12 +16,14 @@ const LoginPage = () => {
     <div>
       {isAuthenticated ? (
         <div>
-        <LandingPage />
-        <Navbar/>
+         <Navbar/>
   <OurEcoSortJourney/>
     <FeaturesComponent />
+    <RecyclingTips/>
     <ImageUpload/>
     <Footer/>
+
+    
   
     </div>
       ) : (
