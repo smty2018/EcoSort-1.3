@@ -9,7 +9,7 @@ const NewsCard = () => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(
-          'https://newsapi.org/v2/everything?q=Sustainability&from=2024-02-02&sortBy=popularity&apiKey=3352ede036ef4ddfb8eb58a4354a65c9'
+          'https://newsapi.org/v2/everything?q=Sustainability&from=2024-03-01&sortBy=popularity&apiKey=3af95c35f4fd4062b9a1ca46a1ed6e98'
         );
 
         // Check if articles array exists and has at least one item

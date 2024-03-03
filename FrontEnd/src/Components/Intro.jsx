@@ -5,7 +5,7 @@ const OurEcoSortJourney = () => {
   const [textAnimation, setTextAnimation] = useState('');
 
   useEffect(() => {
-    const text = "Driven by a commitment to sustainability, EcoSort was founded to provide users with valuable insights on garbage items and their environmental impact.";
+    const text = "Driven by a commitment to sustainability, EcoSort laid it's foundations to provide users with valuable insights on garbage items and their environmental impact.";
     let index = 0;
 
     const interval = setInterval(() => {

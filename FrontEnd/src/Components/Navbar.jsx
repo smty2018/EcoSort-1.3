@@ -11,7 +11,10 @@ const Logo = () => (
 
 
 const Navbar = () => (
-  <div className="navbar flex justify-between items-center py-2 px-4 bg-white shadow-md">
+  <div className="navbar flex justify-between items-center py-2 px-4 bg-white shadow-md" style={{
+    backgroundColor: 'rgba(192,254,114,0.5)',
+    backgroundDropFilter: 'blur(5px)',
+  }}>
     <Logo />
     <div className="links flex space-x-6">
       <Link to="/Home" className="nav-link text-gray-600 hover:text-gray-900">Home</Link>
